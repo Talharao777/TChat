@@ -23,14 +23,14 @@ function App() {
             <BrowserRouter>
                 <Navigation />
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="https://chat-app-v1.herokuapp.com/" element={<Home />} />
                     {!user && (
                         <>
-                            <Route path="/login" element={<Login />} />
-                            <Route path="/signup" element={<Signup />} />
+                            <Route path="https://chat-app-v1.herokuapp.com/login" element={<Login />} />
+                            <Route path="https://chat-app-v1.herokuapp.com/signup" element={<Signup />} />
                         </>
                     )}
-                    <Route path="/chat" element={<Chat />} />
+                    <Route path="https://chat-app-v1.herokuapp.com/chat" element={<Chat />} />
                 </Routes>
             </BrowserRouter>
         </AppContext.Provider>
