@@ -5,7 +5,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const appApi = createApi({
     reducerPath: "appApi",
     baseQuery: fetchBaseQuery({
-        baseUrl: "https://chat-app-v1.herokuapp.com/",
+        baseUrl: "https://chat-app-v1.herokuapp.com",
     }),
 
     endpoints: (builder) => ({
